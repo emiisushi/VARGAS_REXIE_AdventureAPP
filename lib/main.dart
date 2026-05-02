@@ -70,19 +70,25 @@ class _StoryPageState extends State<StoryPage> {
     } catch (_) {}
   }
 
-  Future<void> _playEnding(bool good) async {
+  Future<void> _playEnding() async {
     try {
       await _bgPlayer.stop();
       await _endPlayer.stop();
-      await _endPlayer.play(
-        AssetSource(good ? 'sounds/good_ending.mp3' : 'sounds/bad_ending.mp3'),
-        volume: 0.9,
-      );
+      final String track;
+      if (_storyBrain.isGoodEnding()) {
+        track = 'sounds/good_ending.mp3';
+      } else if (_storyBrain.isNeutralEnding()) {
+        track = 'sounds/neutral_ending.mp3';
+      } else {
+        track = 'sounds/ending_bad.mp3';
+      }
+      await _endPlayer.play(AssetSource(track), volume: 0.9);
     } catch (_) {}
   }
 
   // ── interactions ────────────────────────────────────────────────────────
   void _onStart() async {
+    await _playClick();
     await _initAudio();
     setState(() => _started = true);
   }
@@ -91,7 +97,7 @@ class _StoryPageState extends State<StoryPage> {
     await _playClick();
     setState(() => _storyBrain.nextScene(i));
     if (_storyBrain.isGameOver()) {
-      await _playEnding(_storyBrain.isGoodEnding());
+      await _playEnding();
     }
   }
 
@@ -126,8 +132,8 @@ class _StoryPageState extends State<StoryPage> {
           AnimatedSwitcher(
             duration: const Duration(milliseconds: 700),
             child: Image.asset(
-              _storyBrain.getImage(),
-              key: ValueKey(_storyBrain.getImage()),
+              _started ? _storyBrain.getImage() : 'assets/images/title.png',
+              key: ValueKey(_started ? _storyBrain.getImage() : 'title'),
               fit: BoxFit.cover,
               width: double.infinity,
               height: double.infinity,

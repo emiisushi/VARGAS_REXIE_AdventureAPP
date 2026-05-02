@@ -194,6 +194,7 @@ class StoryBrain {
       _sceneNumber == neutralEndingIndex ||
       _sceneNumber == badEndingIndex;
   bool isGoodEnding() => _sceneNumber == goodEndingIndex;
+  bool isNeutralEnding() => _sceneNumber == neutralEndingIndex;
 
   void reset() {
     _sceneNumber = 0;
