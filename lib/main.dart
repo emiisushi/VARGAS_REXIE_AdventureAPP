@@ -170,52 +170,27 @@ class _StoryPageState extends State<StoryPage> {
 
   // ── tap-to-start overlay ─────────────────────────────────────────────────
   Widget _buildStartOverlay() {
-    return ColoredBox(
-      color: Colors.black.withAlpha(170),
-      child: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              'Canvas of the Heart',
-              textAlign: TextAlign.center,
+    return Align(
+      alignment: Alignment.bottomCenter,
+      child: Padding(
+        padding: const EdgeInsets.only(bottom: 60),
+        child: GestureDetector(
+          onTap: _onStart,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 14),
+            decoration: BoxDecoration(
+              color: _C.choiceBg,
+              border: Border.all(color: _C.accent, width: 1.4),
+            ),
+            child: const Text(
+              '▶   Click to Begin',
               style: TextStyle(
-                fontSize: 28,
-                fontWeight: FontWeight.bold,
+                fontSize: 16,
                 color: _C.accent,
                 letterSpacing: 2,
-                shadows: [Shadow(color: _C.accent, blurRadius: 14)],
               ),
             ),
-            const SizedBox(height: 8),
-            const Text(
-              '— an interactive story —',
-              style: TextStyle(
-                fontSize: 13,
-                color: _C.textSub,
-                letterSpacing: 1.5,
-              ),
-            ),
-            const SizedBox(height: 52),
-            GestureDetector(
-              onTap: _onStart,
-              child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 14),
-                decoration: BoxDecoration(
-                  color: _C.choiceBg,
-                  border: Border.all(color: _C.accent, width: 1.4),
-                ),
-                child: const Text(
-                  '▶   Click to Begin',
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: _C.accent,
-                    letterSpacing: 2,
-                  ),
-                ),
-              ),
-            ),
-          ],
+          ),
         ),
       ),
     );
