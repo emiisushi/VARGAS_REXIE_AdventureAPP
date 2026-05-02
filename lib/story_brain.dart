@@ -135,7 +135,7 @@ class StoryBrain {
           'emotional canvas stuns the judges, and she passes.',
       imagePath: 'assets/images/ending_good.jpg',
       choiceTexts: ['Restart', '', ''],
-      nextSceneIndices: [0, 0, 0],
+      nextSceneIndices: [11, 0, 0],
     ),
     // 9 — Neutral Ending
     Scene(
