@@ -77,7 +77,7 @@ class StoryBrain {
           'Scene 3: Logic Path\n\n'
           'She paints a technically perfect, photorealistic apple. It is '
           'flawless, but it feels as cold as her high grades.',
-      imagePath: 'assets/images/passed.jpg',
+      imagePath: 'assets/images/logic.jpg',
       choiceTexts: [
         'Try harder. Stay late, obsessing over anatomy and light.',
         'Give up. Realize your hands can\'t capture what your eyes can\'t feel.',
