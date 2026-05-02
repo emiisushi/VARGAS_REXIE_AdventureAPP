@@ -27,10 +27,8 @@ flutter:
     - assets/images/art_room.png
     - assets/images/passion.jpg
     - assets/images/passed.jpg
-    - assets/images/logic.png
-    - assets/images/art_club.png
     - assets/images/hidden.png
-    - assets/images/critique.png
+    - assets/images/critique.jpg
     - assets/images/ending_good.jpg
     - assets/images/ending_neutral.png
     - assets/images/ending_bad.png

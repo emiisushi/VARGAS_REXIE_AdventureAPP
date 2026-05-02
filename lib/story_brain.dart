@@ -63,7 +63,7 @@ class StoryBrain {
           'Scene 2: Passion Path\n\n'
           'Her strokes are messy and chaotic, but for the first time, Emi '
           'feels a spark of life in her chest.',
-      imagePath: 'assets/images/passion.png',
+      imagePath: 'assets/images/passion.jpg',
       choiceTexts: [
         'Join Art Club. She can\'t do this alone—seek out the club members.',
         'Paint in secret. Hide the canvas under the bed, terrified of mother\'s reaction.',
@@ -91,7 +91,7 @@ class StoryBrain {
           'Scene 4: The Art Club\n\n'
           'The club president challenges her: "Don\'t paint what you see, '
           'Akimoto. Paint how the world feels."',
-      imagePath: 'assets/images/art_club.png',
+      imagePath: 'assets/images/art_room.png',
       choiceTexts: [
         'Paint the city—chase the feeling of Tokyo at midnight.',
         'Paint a friend—try to capture a heart you know.',
@@ -119,7 +119,7 @@ class StoryBrain {
           'Scene 6: The Critique\n\n'
           'A teacher looks at her "perfect" work and sighs. "There is no '
           '\'Emi\' in this painting. It lacks soul."',
-      imagePath: 'assets/images/critique.png',
+      imagePath: 'assets/images/critique.jpg',
       choiceTexts: [
         'Start over—pour yourself into the next canvas.',
         'Stop art entirely. Pack the brushes away.',
