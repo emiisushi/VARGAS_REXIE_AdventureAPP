@@ -23,7 +23,7 @@ class StoryBrain {
           'Emi Akimoto. As a top-tier student, her life was a series of '
           'checkboxes: Study. Excel. Repeat. But the night she found the art '
           'room door ajar, the grid shattered.',
-      imagePath: 'assets/images/hallway.png',
+      imagePath: 'assets/images/hallwayy.png',
       choiceTexts: ['Continue...', '', ''],
       nextSceneIndices: [1, 1, 1],
     ),
@@ -77,7 +77,7 @@ class StoryBrain {
           'Scene 3: Logic Path\n\n'
           'She paints a technically perfect, photorealistic apple. It is '
           'flawless, but it feels as cold as her high grades.',
-      imagePath: 'assets/images/logic.png',
+      imagePath: 'assets/images/passed.jpg',
       choiceTexts: [
         'Try harder. Stay late, obsessing over anatomy and light.',
         'Give up. Realize your hands can\'t capture what your eyes can\'t feel.',
@@ -125,15 +125,15 @@ class StoryBrain {
         'Stop art entirely. Pack the brushes away.',
         '',
       ],
-      nextSceneIndices: [8, 10, 10],
+      nextSceneIndices: [11, 10, 10],
     ),
     // 8 — Good Ending
     Scene(
       storyText:
           'Scene 7: The Good Ending\n\n'
-          'The Tokyo Art Exam. Emi finds her "Blue Period." Her raw, '
+          'Emi finds her "Blue Period." Her raw, '
           'emotional canvas stuns the judges, and she passes.',
-      imagePath: 'assets/images/ending_good.png',
+      imagePath: 'assets/images/ending_good.jpg',
       choiceTexts: ['Restart', '', ''],
       nextSceneIndices: [0, 0, 0],
     ),
@@ -141,7 +141,7 @@ class StoryBrain {
     Scene(
       storyText:
           'Scene 8: The Neutral Ending — The Hobbyist\n\n'
-          'Emi chooses business school but keeps a sketchbook. Her life is '
+          'Emi chooses to be in the IT field but keeps a sketchbook. Her life is '
           'no longer grayscale, even if it isn\'t her career.',
       imagePath: 'assets/images/ending_neutral.png',
       choiceTexts: ['Restart', '', ''],
@@ -156,6 +156,15 @@ class StoryBrain {
       imagePath: 'assets/images/ending_bad.png',
       choiceTexts: ['Restart', '', ''],
       nextSceneIndices: [0, 0, 0],
+    ),
+    // 11 — Mother Approval (intermediate, leads to Good Ending)
+    Scene(
+      storyText:
+          'Emi showed her mother her work. Her mother approves and '
+          'encourages her to enter the Tokyo Art Exam.',
+      imagePath: 'assets/images/passed.jpg',
+      choiceTexts: ['Continue...', '', ''],
+      nextSceneIndices: [8, 8, 8],
     ),
   ];
 
@@ -180,7 +189,10 @@ class StoryBrain {
     _sceneNumber = _storyData[_sceneNumber].nextSceneIndices[choiceIndex];
   }
 
-  bool isGameOver() => _sceneNumber >= goodEndingIndex;
+  bool isGameOver() =>
+      _sceneNumber == goodEndingIndex ||
+      _sceneNumber == neutralEndingIndex ||
+      _sceneNumber == badEndingIndex;
   bool isGoodEnding() => _sceneNumber == goodEndingIndex;
 
   void reset() {

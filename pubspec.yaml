@@ -22,15 +22,16 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/hallway.png
+    - assets/images/hallwayy.png
     - assets/images/door.png
     - assets/images/art_room.png
-    - assets/images/passion.png
+    - assets/images/passion.jpg
+    - assets/images/passed.jpg
     - assets/images/logic.png
     - assets/images/art_club.png
     - assets/images/hidden.png
     - assets/images/critique.png
-    - assets/images/ending_good.png
+    - assets/images/ending_good.jpg
     - assets/images/ending_neutral.png
     - assets/images/ending_bad.png
     - assets/sounds/bgmusic.mp3
