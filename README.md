@@ -294,13 +294,10 @@ The following images used in this project were **generated using AI tools** (Can
 | `hallwayy.png` | Scene 0 — Hallway Intro | AI-generated |
 | `door.png` | Scene 1 — The Encounter | AI-generated |
 | `art_room.png` | Scene 2, 4 — Art Room / Art Club | AI-generated |
-| `passion.jpg` | Scene 3 — Passion Path | AI-generated |
-| `hidden.png` | Scene 5 — Hidden Talent | AI-generated |
-| `ending_good.jpg` | Scene 8 — Good Ending | AI-generated |
 | `ending_neutral.png` | Scene 9 — Neutral Ending | AI-generated |
 | `ending_bad.png` | Scene 10 — Bad Ending | AI-generated |
-| `title.png` | Title Screen | AI-generated |
-| `passed.jpg` | Scene 11 — Mother Approval | AI-generated |
+
+
 
 The following images are **sourced from the internet** (used for academic/non-commercial purposes):
 
@@ -308,8 +305,15 @@ The following images are **sourced from the internet** (used for academic/non-co
 |---|---|---|
 | `logic.jpg` | Scene 4 — Logic Path | Oil painting of an apple, artist S.A. (Pinterest) |
 | `critique.jpg` | Scene 6 — The Critique | Referenced from internet |
+| `passed.jpg` | Scene 11 — Mother Approval | Pinterest Image |
+| `hidden.png` | Scene 5 — Hidden Talent | Pinterest Image |
+| `ending_good.jpg` | Scene 8 — Good Ending | Pinterest Image |
 
+The following images are **hand-drawn** (drawn from a reference/self-made)
+| `passion.jpg` | Scene 3 — Passion Path | Hand-drawn |
+| `title.png` | Title Screen | Self Designed |
 ---
+
 
 *Canvas of the Heart is a student project submitted in partial fulfillment of the Term-End Requirement for Mobile Application Development, S.Y. 2025–2026.*
 *Inspired by the manga "Blue Period" (青の時代) by Tsubasa Yamaguchi, published by Kodansha.*
