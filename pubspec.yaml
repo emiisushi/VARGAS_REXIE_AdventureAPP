@@ -1,0 +1,39 @@
+name: canvas_of_the_heart
+description: "Canvas of the Heart — an interactive story about Emi Akimoto."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  audioplayers: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/hallway.png
+    - assets/images/door.png
+    - assets/images/art_room.png
+    - assets/images/passion.png
+    - assets/images/logic.png
+    - assets/images/art_club.png
+    - assets/images/hidden.png
+    - assets/images/critique.png
+    - assets/images/ending_good.png
+    - assets/images/ending_neutral.png
+    - assets/images/ending_bad.png
+    - assets/sounds/bgmusic.mp3
+    - assets/sounds/click.mp3
+    - assets/sounds/good_ending.mp3
+    - assets/sounds/bad_ending.mp3
